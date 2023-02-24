@@ -10,7 +10,7 @@ public class califica {
 
 	/**
 	 * Metodo que obtiene un numero y devuelve su resultado.
-	 * @param num_nota
+	 * @param num_nota contiene la nota que se le da desde la clase Notas
 	 * @return resultado
 	 */
 	public static String califica(int num_nota) {

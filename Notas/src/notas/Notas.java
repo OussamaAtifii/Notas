@@ -8,7 +8,11 @@ import java.util.Scanner;
  * @version 1.0 24/02/2023
  * */
 public class Notas {
-
+	
+	/**
+	 * Metodo main en el que se realizara todo el proceso de devolver resultado.
+	 * @param args argumentos que se indican en las propiedades del proyecto
+	 * */
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);// Para pedir un dato numérico por teclado
 		int nota; // Varible nota
@@ -23,8 +27,8 @@ public class Notas {
 	}
 
 	/**
-	 * @param nota
-	 * @return
+	 * @param nota se le indica desde la clase main y es obtenida por el usuario
+	 * @return devuelve resultado
 	 * @deprecated Use {@link notas.califica#califica(int)} instead
 	 */
 	public static String cali(int nota) {
@@ -32,8 +36,8 @@ public class Notas {
 	}
 
 	/**
-	 * @param num_nota
-	 * @return
+	 * @param num_nota se le indica desde la clase main y es obtenida por el usuario
+	 * @return devuelve resultado
 	 * @deprecated Use {@link califica#califica(int)} instead
 	 */
 	public static String califica(int num_nota) {
