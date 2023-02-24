@@ -11,7 +11,7 @@ public class Notas {
 		System.out.print("Introduzca el valor de una calificación: ");
 		nota = reader.nextInt();
 
-		resultado = cali(nota);
+		resultado = califica(nota);
 
 		System.out.println(resultado);
 		reader.close();
@@ -20,16 +20,25 @@ public class Notas {
 	/**
 	 * @param nota
 	 * @return
+	 * @deprecated Use {@link #califica(int)} instead
 	 */
 	public static String cali(int nota) {
+		return califica(nota);
+	}
+
+	/**
+	 * @param num_nota
+	 * @return
+	 */
+	public static String califica(int num_nota) {
 		String resultado;
-		if (nota >= 0 && nota < 5)
+		if (num_nota >= 0 && num_nota < 5)
 			resultado = "Suspenso";
-		else if (nota >= 5 && nota < 7)
+		else if (num_nota >= 5 && num_nota < 7)
 			resultado = "Aprobado";
-		else if (nota >= 7 && nota < 9)
+		else if (num_nota >= 7 && num_nota < 9)
 			resultado = "Notable";
-		else if (nota >= 9 && nota <= 10)
+		else if (num_nota >= 9 && num_nota <= 10)
 			resultado = "Sobresaliente";
 		else
 			resultado = "El valor de la calificación introducida no es correcta";
