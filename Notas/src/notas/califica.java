@@ -1,10 +1,17 @@
 package notas;
 
+/**
+ * Clase a la que se le hace refencia desde Notas para devolver el resultado
+ * @author Oussama Atifi
+ * @version 1.0 24/02/2023
+ * @see Notas
+ * */
 public class califica {
 
 	/**
+	 * Metodo que obtiene un numero y devuelve su resultado.
 	 * @param num_nota
-	 * @return
+	 * @return resultado
 	 */
 	public static String califica(int num_nota) {
 		String resultado;
@@ -19,6 +26,6 @@ public class califica {
 		else
 			resultado = "El valor de la calificación introducida no es correcta";
 		return resultado;
-	}
+	}// Cierre del metodo califica
 
-}
+}// Cierre de la clase
